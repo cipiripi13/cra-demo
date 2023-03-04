@@ -11,3 +11,41 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+header{
+  height: 100px;
+  width: 100%;
+  background-color: rgb(27, 119, 119);
+  color: white;
+  font-size: 20px;
+  font-style: italic;
+  margin: auto;
+  display: grid;
+  justify-items: center;
+  justify-content: center;
+}
+
+
+/* Main style */
+
+main{
+  height: 300px;
+  background-color: rgb(223, 207, 64);
+  color: white;
+  font-size: 20px;
+  font-style: italic;
+  margin: auto;
+}
+
+/* Footer style */
+
+footer{
+  background-color: rgb(27, 119, 119);
+  color: white;
+  font-size: 20px;
+  font-style: italic;
+  margin: auto;
+  display: grid;
+  justify-items: center;
+  justify-content: center;
+}
