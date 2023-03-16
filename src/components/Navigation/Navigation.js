@@ -1,4 +1,4 @@
-export const Navigation = () =>{
+export const Navigation = () =>{ // NAMED EXPORT
     // const navItem = [
         
     //     'Home',

@@ -1,6 +1,6 @@
-import { StrictMode } from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
+import { StrictMode } from 'react'; // DEFAULT IMPORT
+import ReactDOM from 'react-dom/client'; // DEFAULT IMPORT
+import './index.css'; // specijalni import za css
 import { App } from './App';
 
 
