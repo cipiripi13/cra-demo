@@ -1,26 +1,26 @@
-export const Navigation = () =>{ // NAMED EXPORT
-    // const navItem = [
-        
-    //     'Home',
-    //     'About',
-    //     'Aboout Us'
-    // ];
+export const Navigation = () => { // NAMED EXPORT
+  // const navItem = [
 
-    const navItem = [
-        {name: 'Home', link: '/'},
-        {name: 'About us', link: '/'},
-        {name: 'Contact', link: '/'},
-    ]
+  //     'Home',
+  //     'About',
+  //     'Aboout Us'
+  // ];
 
-    return (
-        <nav>
-            <p>Header</p>
-           {
-           navItem.map((item) =>{
-            return <a href={item.link}>{(item.name)}</a>
-            })
-           } 
-        </nav>
-    );
-   
+  const navItem = [
+    { name: 'Home', link: '/' },
+    { name: 'About us', link: '/' },
+    { name: 'Contact', link: '/' },
+  ]
+
+  return (
+    <nav>
+      <p>Header</p>
+      {
+        navItem.map((item, index) => {
+          return <a href={item.link} key={index}>{(item.name)}</a>
+        })
+      }
+    </nav>
+  );
+
 };
