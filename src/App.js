@@ -11,7 +11,12 @@ import Footer, { nestoDrugo, obimKruga, povrsinKruga } from './components/Footer
 
 export function App() { // NAMED EXPORT
   // function App() { // 
-  const povrsina = povrsinKruga(70);
+  // const povrsina = povrsinKruga(70);
+
+ const handleEvent = () => {
+    alert('Pozdrav');
+    console.log('Footer');
+  };
 
 
   return (
@@ -21,9 +26,9 @@ export function App() { // NAMED EXPORT
       <Header poruka="Zdravo svima" />
       <DrugoIme poruka="Zdravo svima" />
       <MainContent />
-      <Footer />
+      <Footer onClick={handleEvent}/>
       {nestoDrugo}
-      <br />
+      {/* <br />
       Obim kruga: {obimKruga(70)}
       <br />
       Povrsina kruga: {povrsina}
@@ -31,7 +36,7 @@ export function App() { // NAMED EXPORT
       {3 + 2}
       {null}
       {5}
-      {(5)}
+      {(5)} */}
 
     </div>
   );
