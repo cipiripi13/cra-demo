@@ -1,10 +1,18 @@
-import React from "react"
+import React, { useState } from "react"
 
 // export const Footer = () => { // NAMED EXPORT
 const Footer = (props) => { //
+  
+  let [footer, setFooter] = useState('footer');
+  const handleClick = () => {
+    setFooter('Ovo je promena na klik u footeru iz useState')
+  }
+  
   return (
     <footer>
-      <p>Footer</p>
+      <p >{footer}</p>
+      <button onClick={handleClick}>change footer on click</button>
+      <div>{props.message}</div>
       <button onClick={props.onClick} >Click</button>
     </footer>
   )

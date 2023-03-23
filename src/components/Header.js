@@ -5,7 +5,7 @@ import { Navigation } from "./Navigation/Navigation";
 const Header = (props) => {
   return (
     <header>
-      <div>{props.poruka}</div>
+      <div>{props.poruka} {props.text}</div>
       <Navigation />
     </header>
   )

@@ -1,4 +1,4 @@
-export const MainContent = () => {
+export const MainContent = (props) => {
 
   const url = 'https://shoppermotion.com/wp-content/uploads/2019/06/store-layout-floorplan-1537008-1.jpg';
   const dimensions = '200px';
@@ -17,6 +17,10 @@ export const MainContent = () => {
       <p style={{ color: 'red', cursor: 'pointer' }} onClick={myFunc2}>Main Content</p>
       <img onClick={myFunc} src={url} alt="layout" width={dimensions} style={{ margin: '10px', cursor: 'pointer' }} />
       <img src="https://shoppermotion.com/wp-content/uploads/2019/06/store-layout-floorplan-1537008-1.jpg" width={dimensions} alt='layout' />
+      <div>
+      <button onClick={props.onClick}>Click</button>
+      </div>
+
     </main>
   )
 }

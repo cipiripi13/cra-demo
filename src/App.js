@@ -13,20 +13,18 @@ export function App() { // NAMED EXPORT
   // function App() { // 
   // const povrsina = povrsinKruga(70);
 
- const handleEvent = () => {
+ const handleEvent = (e) => {
     alert('Pozdrav');
-    console.log('Footer');
+    console.log(e.target);
   };
 
 
   return (
-    <div className='App' onClick={() => {
-      console.log('kliknuli smo')
-    }}  >
+    <div className='App' >
       <Header poruka="Zdravo svima" />
-      <DrugoIme poruka="Zdravo svima" />
-      <MainContent />
-      <Footer onClick={handleEvent}/>
+      <DrugoIme text={'Ovo je pozdrav iz Header-a'} />
+      <MainContent onClick={handleEvent} />
+      <Footer onClick={handleEvent} message ={'Ovo je props'}/>
       {nestoDrugo}
       {/* <br />
       Obim kruga: {obimKruga(70)}
